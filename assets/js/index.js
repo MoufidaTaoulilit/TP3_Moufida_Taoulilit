@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Si les éléments ne sont pas sur la page, on ne fait rien
   if (!btnPlus || !btnMoins || !elCompteur) return;
 
-  // Valeur initiale lue dans le DOM (ex. "3")
+  // Valeur initiale lue dans le DOM 
   let valeur = parseInt(elCompteur.textContent, 10);
   if (isNaN(valeur)) valeur = 0;
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!elMsg) return;
 
-    // Petit message d’info simple (optionnel)
+    // message d’info 
     if (valeur > 10) {
       elMsg.textContent =
         "Au-delà de 10 pages, un devis personnalisé est recommandé.";
@@ -39,6 +39,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Premier rendu
-  majAffichage();
+    majAffichage();
 });
