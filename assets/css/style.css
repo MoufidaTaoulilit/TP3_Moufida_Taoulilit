@@ -1,0 +1,69 @@
+/* ========== Base & reset légers ========== */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== Lien d'évitement (accessibilité) ========== */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: .5rem .75rem;
+  background: #0d6efd;       /* même bleu que Bootstrap */
+  color: #fff;
+  border-radius: .25rem;
+  z-index: 1050;
+}
+
+/* ========== Navbar : petit renfort visuel ========== */
+.navbar .nav-link.active { font-weight: 600; }
+.navbar-brand { font-weight: 600; }
+
+/* ========== Bannière / Héro (si image plein large) ========== */
+.hero-img {
+  width: 100%;
+  height: 420px;            /* ajuste 360–520px selon ta bannière */
+  object-fit: cover;        /* recadre proprement */
+  border-radius: .5rem;
+}
+
+/* ========== Cartes Services : vignettes de taille uniforme ========== */
+.service-thumb {
+  height: 220px;            /* même hauteur pour toutes */
+  width: 100%;
+  object-fit: cover;        /* recadre sans déformer */
+}
+
+/* ========== Titres / micro-typo ========== */
+h1, h2, h3 { letter-spacing: .2px; }
+.section-intro { max-width: 60ch; } /* pour limiter la largeur d’un paragraphe d’intro */
+
+/* ========== Formulaires ========== */
+.form-label { font-weight: 500; }
+textarea { resize: vertical; }      /* redimension only vertical */
+
+/* ========== Footer ========== */
+footer .link-light:hover { text-decoration: underline; }
+footer .text-body-secondary { opacity: .85; }
+
