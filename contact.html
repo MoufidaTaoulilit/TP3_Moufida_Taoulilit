@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Axion Web</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png/networking-icon.png">
+
+  <!-- Ton CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Aller au contenu</a>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navigation principale">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Axion Web</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Basculer la navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- 1) HÉRO -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-12 col-lg-8">
+            <h1 class="display-5 fw-semibold mb-3">Entrer en contact</h1>
+            <p class="lead mb-0">
+              Une question, un devis, un projet en tête ? Écrivez-nous : réponse sous 24&nbsp;h ouvrables.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2) COORDONNÉES + CARTE -->
+    <section class="py-4 bg-body-tertiary">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-12 col-lg-5">
+            <h2 class="h4">Nos coordonnées</h2>
+            <address class="mb-3">
+              9023 rue le Ryer<br>
+              Montréal (QC) H1P&nbsp;2Y3<br>
+              Québec, Canada
+            </address>
+
+            <p class="mb-1">
+              Téléphone :
+              <a href="tel:14384834248">+1&nbsp;438&nbsp;483&nbsp;4248</a>
+            </p>
+            <p class="mb-3">
+              Courriel :
+              <a href="mailto:contact@axionweb.ca">contact@axionweb.ca</a>
+            </p>
+
+            <p class="text-body-secondary mb-0">
+              Lundi–Vendredi : 9&nbsp;h – 17&nbsp;h
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-7">
+            <h2 class="h4 visually-hidden">Carte</h2>
+            <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+              <!-- Carte Google Maps (intégration simple, pas de JS) -->
+              <iframe
+                title="Localisation Axion Web"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=9023%20rue%20le%20Ryer%2C%20Montr%C3%A9al%2C%20H1P%202Y3&output=embed">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) FORMULAIRE DE CONTACT (version simple) -->
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <h2 class="h3 mb-4">Formulaire</h2>
+
+        <!-- Envoi simple via le client mail (pas de JS) -->
+        <form action="mailto:contact@axionweb.ca" method="post" enctype="text/plain">
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom complet <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="nom" name="Nom" placeholder="Votre nom" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="courriel" class="form-label">Courriel <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" id="courriel" name="Courriel"
+                   placeholder="vous@exemple.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="sujet" class="form-label">Sujet (optionnel)</label>
+            <input type="text" class="form-control" id="sujet" name="Sujet" placeholder="Devis, question…">
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+            <textarea class="form-control" id="message" name="Message" rows="5"
+                      minlength="10" placeholder="Votre message…" required></textarea>
+          </div>
+
+          <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <button type="reset" class="btn btn-outline-secondary">Effacer</button>
+          </div>
+        </form>
+
+        <p class="text-body-secondary mt-3 mb-0">
+          L’envoi utilise votre client courriel (<code>mailto:</code>), comme vu en classe.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- 4) FAQ courte -->
+    <section class="py-5 bg-body-tertiary">
+      <div class="container">
+        <h2 class="h4 mb-4">Questions fréquentes</h2>
+        <div class="accordion" id="faq">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1head">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                Sous quel délai répondez-vous ?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1head" data-bs-parent="#faq">
+              <div class="accordion-body">
+                Nous répondons généralement sous 24&nbsp;h ouvrables (du lundi au vendredi).
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2head">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                Pouvez-vous m’aider pour l’hébergement et le nom de domaine ?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2head" data-bs-parent="#faq">
+              <div class="accordion-body">
+                Oui, nous offrons l’accompagnement pour la réservation du domaine, l’hébergement
+                et la mise en ligne initiale de votre site.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3head">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                Travaillez-vous avec des CMS (WordPress, etc.) ?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3head" data-bs-parent="#faq">
+              <div class="accordion-body">
+                Selon le besoin, nous proposons un site statique performant ou un CMS simple à entretenir.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo" class="bg-dark text-light mt-auto pt-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Col 1 : À propos -->
+      <div class="col-12 col-md-4">
+        <h3 class="h5">Axion Web</h3>
+        <p class="mb-3">
+          Agence web à Montréal. Nous créons des sites clairs, rapides et faciles à gérer.
+          De la mise en ligne au suivi, on s’occupe de l’essentiel.
+        </p>
+        <p class="mb-0 text-body-secondary">
+          Lundi–Vendredi&nbsp;: 9&nbsp;h – 17&nbsp;h
+        </p>
+      </div>
+
+      <!-- Col 2 : Liens rapides -->
+      <div class="col-6 col-md-4">
+        <h3 class="h6 text-uppercase">Liens rapides</h3>
+        <ul class="list-unstyled mb-0">
+          <li><a class="link-light text-decoration-none" href="index.html">Accueil</a></li>
+          <li><a class="link-light text-decoration-none" href="services.html">Services</a></li>
+          <li><a class="link-light text-decoration-none" href="contact.html">Contact</a></li>
+          <!-- Ajoute si tu veux : <li><a class="link-light text-decoration-none" href="#">Blog</a></li> -->
+        </ul>
+      </div>
+
+      <!-- Col 3 : Coordonnées -->
+      <div class="col-6 col-md-4">
+        <h3 class="h6 text-uppercase">Nous joindre</h3>
+        <address class="mb-2">
+          9023 rue le Ryer<br>
+          Montréal (QC) H1P&nbsp;2Y3<br>
+          Québec, Canada
+        </address>
+        <p class="mb-1">
+          Tél.&nbsp;: <a class="link-light text-decoration-none" href="tel:14384834248">+1&nbsp;438&nbsp;483&nbsp;4248</a>
+        </p>
+        <p class="mb-0">
+          Courriel&nbsp;: <a class="link-light text-decoration-none" href="mailto:contact@axionweb.ca">contact@axionweb.ca</a>
+        </p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary my-4">
+
+    <!-- Bas de pied -->
+    <div class="d-flex flex-column flex-md-row align-items-center gap-3 pb-4">
+      <small class="me-md-auto">© 2025 Axion Web. Tous droits réservés.</small>
+
+      <nav aria-label="Liens légaux" class="d-flex gap-3">
+        <a class="link-light text-decoration-none" href="#">Confidentialité</a>
+        <a class="link-light text-decoration-none" href="#">Conditions</a>
+        <a class="link-light text-decoration-none" href="#top">Haut de page</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+          crossorigin="anonymous"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
