@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services — Axion Web</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+  <!-- Favicon (dans le dossier "favicon.png/" qui est un dossier) -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png/networking-icon.png">
+
+  <!-- Ton CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Aller au contenu</a>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navigation principale">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Axion Web</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Basculer la navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- HÉRO -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 text-center">
+            <h1 class="display-5 fw-semibold mb-3">Services</h1>
+            <p class="lead mb-4">Du cadrage à la mise en ligne, puis l’amélioration continue.</p>
+            <a class="btn btn-primary btn-lg" href="contact.html">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESTATIONS (avec images) -->
+    <section class="py-5 bg-body-tertiary">
+      <div class="container">
+        <h2 class="h3 mb-4">Nos prestations</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Carte 1 : Site vitrine -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/Site-vitrine.jpg"
+                class="card-img-top service-thumb"
+                alt="Exemple d’interface de site vitrine"
+                loading="lazy">
+              <div class="card-body">
+                <h3 class="h5 card-title">Site vitrine</h3>
+                <p class="card-text">Présenter clairement votre activité et vos atouts.</p>
+                <a class="btn btn-outline-primary" href="contact.html">Demander un devis</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte 2 : E-commerce -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/E-commerce.jpg"
+                class="card-img-top service-thumb"
+                alt="Illustration d’une boutique en ligne"
+                loading="lazy">
+              <div class="card-body">
+                <h3 class="h5 card-title">E-commerce</h3>
+                <p class="card-text">Catalogue simple, panier fluide et paiement sécurisé.</p>
+                <a class="btn btn-outline-primary" href="contact.html">Demander un devis</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte 3 : Maintenance & SEO -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/Maintenance-SEO.jpg"
+                class="card-img-top service-thumb"
+                alt="Visuel symbolisant la maintenance et le SEO"
+                loading="lazy">
+              <div class="card-body">
+                <h3 class="h5 card-title">Maintenance et SEO</h3>
+                <p class="card-text">Mises à jour, sécurité, performance, SEO de base.</p>
+                <a class="btn btn-outline-primary" href="contact.html">Demander un devis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row"><div class="col-12 col-md-10 mx-auto text-center">
+          <h2 class="h3 mb-3">Un projet en tête ?</h2>
+          <p class="mb-4">Parlons de votre site et recevez une estimation sous 24&nbsp;h.</p>
+          <a class="btn btn-light btn-lg" href="contact.html">Demander un devis</a>
+        </div></div>
+      </div>
+    </section>
+
+    <!-- FORFAITS (H2 centré) + ACCORDÉON + COMPTEUR + BOUTON -->
+    <section class="py-5" aria-labelledby="forfaits-heading">
+      <div class="container">
+
+        <!-- Titre H2 centré -->
+        <div class="text-center mb-4">
+          <h2 id="forfaits-heading" class="display-6 mb-0">Nos forfaits</h2>
+        </div>
+
+        <!-- Accordéon -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <div class="accordion" id="forfaitsAccordion">
+              <!-- Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="forfaitStarterHead">
+                  <button class="accordion-button" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#forfaitStarter"
+                          aria-expanded="true" aria-controls="forfaitStarter">
+                    Forfait Starter — ce qui est inclus
+                  </button>
+                </h2>
+                <div id="forfaitStarter" class="accordion-collapse collapse show"
+                     aria-labelledby="forfaitStarterHead" data-bs-parent="#forfaitsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0">
+                      <li>Jusqu’à 5 sections</li>
+                      <li>Design responsive (mobile d’abord)</li>
+                      <li>Formulaire de contact</li>
+                      <li>Mise en ligne et configuration du domaine</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="forfaitDetailsHead">
+                  <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#forfaitDetails"
+                          aria-expanded="false" aria-controls="forfaitDetails">
+                    Détails techniques
+                  </button>
+                </h2>
+                <div id="forfaitDetails" class="accordion-collapse collapse"
+                     aria-labelledby="forfaitDetailsHead" data-bs-parent="#forfaitsAccordion">
+                  <div class="accordion-body">
+                    <p class="mb-0">
+                      HTML5/CSS/Bootstrap, images compressées, métadonnées de base,
+                      Analytics simple, optimisation de performance de base.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="forfaitProHead">
+                  <button class="accordion-button collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#forfaitPro"
+                          aria-expanded="false" aria-controls="forfaitPro">
+                    Forfait Pro — options &amp; accompagnement
+                  </button>
+                </h2>
+                <div id="forfaitPro" class="accordion-collapse collapse"
+                     aria-labelledby="forfaitProHead" data-bs-parent="#forfaitsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0">
+                      <li>Pages illimitées, blog/actualités</li>
+                      <li>SEO de base et suivi</li>
+                      <li>Options : e-commerce, newsletter, traductions</li>
+                      <li>Support prioritaire et mises à jour</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.accordion -->
+          </div>
+        </div>
+
+        <!-- Compteur +/− + bouton -->
+        <div class="row justify-content-center pt-4">
+          <div class="col-12 col-md-6 text-center">
+            <h3 class="h5 mb-3">Quantité de pages</h3>
+            <div class="d-flex align-items-center justify-content-center gap-3">
+              <button id="moins" type="button" class="btn btn-outline-secondary" aria-label="Diminuer">−</button>
+              <strong id="compteur" aria-live="polite">3</strong>
+              <button id="plus" type="button" class="btn btn-outline-secondary" aria-label="Augmenter">+</button>
+            </div>
+            <small id="message" class="d-block mt-2"></small>
+
+            <!-- Bouton SOUS le compteur, mène à Contact -->
+            <a href="contact.html" class="btn btn-primary mt-4">Choisir votre forfait</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+<footer role="contentinfo" class="bg-dark text-light mt-auto pt-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Col 1 : À propos -->
+      <div class="col-12 col-md-4">
+        <h3 class="h5">Axion Web</h3>
+        <p class="mb-3">
+          Agence web à Montréal. Nous créons des sites clairs, rapides et faciles à gérer.
+          De la mise en ligne au suivi, on s’occupe de l’essentiel.
+        </p>
+        <p class="mb-0 text-body-secondary">
+          Lundi–Vendredi&nbsp;: 9&nbsp;h – 17&nbsp;h
+        </p>
+      </div>
+
+      <!-- Col 2 : Liens rapides -->
+      <div class="col-6 col-md-4">
+        <h3 class="h6 text-uppercase">Liens rapides</h3>
+        <ul class="list-unstyled mb-0">
+          <li><a class="link-light text-decoration-none" href="index.html">Accueil</a></li>
+          <li><a class="link-light text-decoration-none" href="services.html">Services</a></li>
+          <li><a class="link-light text-decoration-none" href="contact.html">Contact</a></li>
+          <!-- Ajoute si tu veux : <li><a class="link-light text-decoration-none" href="#">Blog</a></li> -->
+        </ul>
+      </div>
+
+      <!-- Col 3 : Coordonnées -->
+      <div class="col-6 col-md-4">
+        <h3 class="h6 text-uppercase">Nous joindre</h3>
+        <address class="mb-2">
+          9023 rue le Ryer<br>
+          Montréal (QC) H1P&nbsp;2Y3<br>
+          Québec, Canada
+        </address>
+        <p class="mb-1">
+          Tél.&nbsp;: <a class="link-light text-decoration-none" href="tel:14384834248">+1&nbsp;438&nbsp;483&nbsp;4248</a>
+        </p>
+        <p class="mb-0">
+          Courriel&nbsp;: <a class="link-light text-decoration-none" href="mailto:contact@axionweb.ca">contact@axionweb.ca</a>
+        </p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary my-4">
+
+    <!-- Bas de pied -->
+    <div class="d-flex flex-column flex-md-row align-items-center gap-3 pb-4">
+      <small class="me-md-auto">© 2025 Axion Web. Tous droits réservés.</small>
+
+      <nav aria-label="Liens légaux" class="d-flex gap-3">
+        <a class="link-light text-decoration-none" href="#">Confidentialité</a>
+        <a class="link-light text-decoration-none" href="#">Conditions</a>
+        <a class="link-light text-decoration-none" href="#top">Haut de page</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+          crossorigin="anonymous"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
